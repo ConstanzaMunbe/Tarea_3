@@ -22,6 +22,7 @@ if(listaDeNumeros[5]+1>0){
 if(unlist(listaDeNumeros[5])+1>0){
   print("se cumple")
 }
+
 Al ejecutar el if con el unlist, se puede realizar la operación pedida, porque unlist
 entrega solo el valor que corresponde a la posición que se pide, si se ejecuta con la 
 variable que corresponde a la lista
@@ -77,7 +78,7 @@ completo del rando 1 : 100
 for(i in listaDeNumeros){
     print(listaDeNumeros)
   }
-  
+
 Se reemplazó la iteración numérica por la iteración de la listaDeNumeros
 y al ejecutar se imprimió la posicón de la lista con el valor que le corresponde,
 sin ordenar secuencialmente.
@@ -90,9 +91,9 @@ for(i in listaDeNumeros){
   }else{
       print("impar")
     }
-   
+ 
 }
-  
+ 
 
 Ocupé la función for para hacer una iteración numérica dentro de la lista listaDeNumeros,
 para ocupar un if que condicione la iteración mediante una división de 2, para 
@@ -121,7 +122,7 @@ for( votante in listaDeVotos){
       }else{
         print("No")
       }
-    
+   
 }
 
 
@@ -166,10 +167,12 @@ posteriormente se procesaran para realizar una diferencia de las areas de 2 rect
 obteniendo así el resultado deseado. *(a1*b1 sera el area del rectangulo mas grande)*
 
 pi <- 3.1415
+
 areaCirculo <- function(r1,r2){
   pi*(r1^2) - pi*(r2^2)
 }
 areaCirculo(6,4)
+
 
 Con la misma lógica la funcion (areaRectangulo), se modificó para que opere con los datos necesarios
 para calcular el área de los círculos, éste requirió establecer el valor de pi.
